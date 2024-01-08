@@ -3,7 +3,7 @@ import { LogOut, User2 } from 'lucide-react'
 import useGeneralStore from '../stores/general-store';
 import { useUserStore } from '../stores/user-store';
 import { useMutation } from '@apollo/client';
-import { useLocation } from 'react-router-dom';
+
 import { LOGOUT_USER } from '../graphql/mutations/logout';
 import confetti from 'canvas-confetti';
 
@@ -13,10 +13,6 @@ const ProfileDropDown = () => {
     const setIsLoginOpen = useGeneralStore((state) => state.setLoginIsOpen)
     const setUser = useUserStore((state) => state.setUser)
     const [logoutUser] = useMutation(LOGOUT_USER)
-    const location = useLocation()
-    const getURL = () => {
-        return window.location.pathname
-    }
 
     const handleLogout = async () => {
         try {

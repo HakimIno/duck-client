@@ -84,7 +84,7 @@ export const client = new ApolloClient({
             Query: {
                 fields: {
                     getCommentsByPostId: {
-                        merge(existing, incoming) {
+                        merge(incoming) {
                             return incoming
                         },
                     },

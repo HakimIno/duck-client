@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { useLocation, Link } from "react-router-dom"
 import MenuItem from "./MenuItem"
 import MenutItemFollow from "./MenuItemFollow"
@@ -6,7 +6,7 @@ import { useQuery } from "@apollo/client"
 import { GET_USERS } from "../graphql/queries/getUsers"
 
 function SideNavMain() {
-    const { data, loading, fetchMore } = useQuery(GET_USERS, {})
+    const { data, } = useQuery(GET_USERS, {})
     const [showAllUsers, setShowAllUsers] = useState(false)
 
     const displayedUsers = showAllUsers

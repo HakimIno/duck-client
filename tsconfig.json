@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "../tiktok-server/src/filters"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

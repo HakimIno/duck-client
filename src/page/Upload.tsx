@@ -12,11 +12,14 @@ const Upload = () => {
     undefined
   )
 
+  console.log(file);
+  
+
   const [errorType, setErrorType] = useState<string | null>(null)
   const [caption, setCaption] = useState<string>("")
   const [fileData, setFileData] = useState<File | null>(null)
-  const [errors, setErrors] = useState<string[]>([])
-  const [isUploading, setIsUploading] = useState<boolean>(false)
+  // const [errors, setErrors] = useState<string[]>([])
+  // const [isUploading, setIsUploading] = useState<boolean>(false)
   
   const [currentTime, setCurrentTime] = useState(0);
   const [stop, setStop] = useState(false);
@@ -94,16 +97,16 @@ const Upload = () => {
     console.log(fileDisplay)
   }
 
-  const discard = () => {
-    setFile(null)
-    setFileDisplay(undefined)
-    setCaption("")
-  }
+  // const discard = () => {
+  //   setFile(null)
+  //   setFileDisplay(undefined)
+  //   setCaption("")
+  // }
 
-  const clearVideo = () => {
-    setFile(null)
-    setFileDisplay(undefined)
-  }
+  // const clearVideo = () => {
+  //   setFile(null)
+  //   setFileDisplay(undefined)
+  // }
 
   useEffect(() => {
     console.log(caption.length)

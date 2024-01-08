@@ -1,6 +1,6 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Input, Avatar } from "@nextui-org/react";
-import { MessageSquareText, Search, Send, Upload } from "lucide-react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
+import { MessageSquareText, Send, Upload } from "lucide-react";
 import { Logo } from "./Logo";
 import { Link } from "react-router-dom"
 import SearchBar from "./SearchBar";
@@ -12,7 +12,7 @@ import ProfileDropDown from "./ProfileDropdown";
 export default function TopNavbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const user = useUserStore((state) => state)
-    const setUser = useUserStore((state) => state.setUser)
+   
 
     const setLoginIsOpen = useGeneralStore((state) => state.setLoginIsOpen)
 
