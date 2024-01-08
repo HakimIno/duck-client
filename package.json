@@ -20,6 +20,7 @@
     "@nextui-org/react": "^2.2.9",
     "@types/apollo-upload-client": "17.0.0",
     "@types/canvas-confetti": "^1.6.4",
+    "@types/loadable__component": "^5.13.8",
     "apollo-upload-client": "17.0.0",
     "autoprefixer": "^10.4.16",
     "bunx": "^0.1.0",
